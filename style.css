@@ -1,0 +1,50 @@
+/* Preserve original styles */
+.custom-heading {
+  font-family: 'Caveat', 'Edu NSW ACT Cursive', cursive;
+  font-size: 2.5rem;
+  background-color: black;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Ensure carousel images scale */
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .hero-img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  header img {
+    height: 40px;
+    width: 40px;
+  }
+  .carousel-item img {
+    height: 200px;
+  }
+}
+
+/* Smooth scroll for navigation */
+html {
+  scroll-behavior: smooth;
+}
